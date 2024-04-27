@@ -1,0 +1,160 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: rgb(245, 247, 252);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid rgb(166, 213, 250);
+    margin: 40px 0px 40px 0px;
+}
+
+table td {
+    padding: 10px 5px 10px 10px;
+    border: 1px solid rgb(166, 213, 250);
+}
+
+.column {
+    width: 154px;
+}
+
+select {
+    width: 20%;
+    border: 1px solid rgb(166, 213, 250);
+    border-radius: 5px;
+    padding: 16px 32px;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: white;
+    font-size: 14px;
+}
+
+select::-ms-expand {
+    display: none;
+    border: 1px solid rgb(166, 213, 250);
+}
+
+.select-fields {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.schedule-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#schedule {
+    margin: 10px auto;
+}
+
+.schedule-container__header, .schedule-container__mobile-actions  {
+    display: flex;
+    justify-content: space-between;
+}
+
+#week {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: rgb(39, 128, 227);
+    text-align: center;
+}
+
+#prevButton, #nextButton {
+    margin: auto 10px;
+    font-size: 16px;
+}
+
+button {
+    font-size: 20px;
+    color: rgb(39, 128, 227);
+    background-color: rgb(245, 247, 252);
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.first-row{
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    word-spacing: 1000px;
+}
+.one-row{
+    line-height: 1.5;
+    text-align: left;
+}
+
+.one-cell{
+    vertical-align: top;
+}
+
+.text-style1 {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: .15px;
+}
+
+a{
+    color: rgb(39, 128, 227);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#prevDay, #nextDay {
+    display: none;
+}
+
+#select, #selectTeacher {
+    width: 250px;
+}
+
+#select {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 481px) {
+    button {
+        font-size: 10px;
+        padding: 4px 8px;
+        margin: 2px 1px;
+        height: 30px;
+    }
+
+    #week {
+        font-size: 10px;
+    }
+
+    #select, #selectTeacher {
+        width: 100px;
+    }
+
+    select {
+        min-width: 6ch;
+        max-width: 15ch;
+        max-height: 25px;
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .schedule-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #prevButton, #nextButton {
+        height: 10%;
+        margin-top: 0;
+    }
+}
